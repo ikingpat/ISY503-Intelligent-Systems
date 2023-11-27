@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0; padding: 0;
+}
+
+body{
+    background: white; 
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    margin: 20px auto;
+    text-align: center;
+}
+
+.container h1 {
+    color: lightblue;
+}
+
+.container input{
+    padding: 8px 32px;
+    margin: 8px 4px;
+    width: 50%;
+    font-size: 28px;
+    color: lightblue;
+    outline-color: lightblue;
+    border-radius: 4px;
+}
+
+.container button{
+    display: block;
+    margin: 20px auto;
+    padding: 8px 8px;
+    font-size: 24px;
+    background: lightblue;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.container button:hover{
+    transform: scale();
+}
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    display: none;
+    width: 60px;
+    aspect-ratio: 2;
+    margin: 10px auto;
+    --_g: no-repeat radial-gradient(farthest-side,lightblue 90%,lightblue);
+    background: 
+      var(--_g) 0    50%,
+      var(--_g) 50%  50%,
+      var(--_g) 50%  50%,
+      var(--_g) 100% 50%;
+    background-size: 25% 50%;
+    animation: l12 1s infinite linear;
+  }
+  @keyframes l12 {
+      33%  {background-position:0   0  ,50% 100%,50%  100%,100% 0}
+      66%  {background-position:50% 0  ,0   100%,100% 100%,50%  0}
+      100% {background-position:50% 50%,0   50% ,100% 50% ,50%  50%}
+  }
+
